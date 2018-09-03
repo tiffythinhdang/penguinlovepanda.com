@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="155px" height="155px" viewBox="0 0 155 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Nav Tab 1/ shop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-20.6%" y="-20.6%" width="141.2%" height="141.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD/-Homepage" transform="translate(-548.000000, -762.000000)">
+            <g id="Nav-Tab-1/-shop" transform="translate(568.000000, 772.000000)">
+                <circle id="Oval-2" fill="#8E674D" fill-rule="evenodd" filter="url(#filter-1)" cx="58.1896552" cy="66.8103448" r="58.1896552"></circle>
+                <circle id="Oval-2" fill="#FFFFFF" fill-rule="evenodd" cx="66.8103448" cy="58.1896552" r="58.1896552"></circle>
+                <text id="shop" font-family="Comfortaa-Regular, Comfortaa" font-size="24" font-weight="normal" fill="#8E674D">
+                    <tspan x="36.0413793" y="69.4827586">shop</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main-content {
+	box-sizing: border-box;
+	grid-area: 3 / 3 / span 1 / span 1;
+	background-color: rgba(248, 241, 180, 0.8);
+	border-radius: 25px;
+	padding: 50px;
+	font-size: 18px;
+	line-height: 28px;
+	color: #8E674D;
+	z-index: 10;
+}
+
+.contact img {
+	height: 120%;
+	animation: pulselight 3s linear infinite;
+}
+
+.read img, .shop img, .about img {
+	height: 90%;
+}
+
+
+@keyframes pulselight {
+	0% {
+    transform: scale(1);
+    opacity: 1;
+	}
+	
+	50% {
+    transform: scale(1.1);
+    opacity: 0.75;
+	}
+	
+	100% {
+    transform: scale(1);
+    opacity: 1;
+	}
+}
+
+
+
+/*----MOBILE VIEW----*/
+
+@media (max-width: 420px) {
+
+.main-content {
+	grid-area: 4 / 2 / span 1 / span 4;
+	border-radius: 20px;
+	padding: 20px;
+	height: 90%;
+	font-size: 14px;
+	line-height: 22px;
+	overflow: auto;
+}
+
+.contact img {
+	height: 150%;
+}
+
+.read img, .shop img, .about img {
+	height: 110%;
+}	
+}

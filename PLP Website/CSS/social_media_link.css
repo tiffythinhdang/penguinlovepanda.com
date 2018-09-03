@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*----DESKTOP VIEW----*/
+
+header {
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	text-align: right;
+	z-index: 10;
+}
+
+header .social {
+	height: 50px;
+	width: 50px;
+	margin: 10px;
+	display: inline-block;
+	background-size: cover;
+}
+
+header .instagram {
+	background-image: url("../RESOURCES/ICONS/Instagram Icon.svg");
+}
+
+header .facebook {
+	background-image: url("../RESOURCES/ICONS/Facebook Icon.svg");
+}
+
+header .webtoon {
+	background-image: url("../RESOURCES/ICONS/Webtoon Icon.svg");
+}
+
+
+/*----MOBILE VIEW----*/
+
+@media (max-width: 420px) {
+	
+header {
+	text-align: center;
+	z-index: 10;
+}
+	
+header .social {
+	margin-top: 15px;
+}
+
+}

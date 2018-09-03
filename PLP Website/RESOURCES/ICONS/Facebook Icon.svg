@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50" height="50" rx="10"></rect>
+        <filter x="-19.0%" y="-19.0%" width="158.0%" height="158.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0 0 19.1304348 0 19.1304348 34.4347826 0 34.4347826"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(3.000000, 3.000000)">
+            <g id="Rectangle-Copy">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group-2" transform="translate(3.000000, 3.000000)">
+                <rect id="Rectangle-Copy-3" fill="#3B5998" x="0" y="0" width="44" height="44" rx="10"></rect>
+                <g id="Group-3" transform="translate(16.260870, 9.565217)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <g id="Group" mask="url(#mask-4)" fill="#FFFFFF">
+                        <path d="M5.26643709,34.4347826 L5.26643709,18.6221519 C5.09820931,18.6221519 4.96431373,18.6221519 4.83041814,18.6222188 C3.34287255,18.6222188 1.85532696,18.6185398 0.367781373,18.6258309 C0.122924118,18.6270349 -0.00156444181,18.5902453 1.48394189e-05,18.3028183 C0.011756452,16.1737718 0.00612597114,14.0447252 0.00722460156,11.9156117 C0.00729326596,11.8396245 0.021163475,11.7635704 0.0318751216,11.6539375 L5.26650576,11.6539375 C5.26650576,11.4917288 5.26293521,11.3639687 5.26705507,11.2364091 C5.30825371,9.95673368 5.22516979,8.65866344 5.41928405,7.4013293 C5.80916052,4.8765606 7.06764167,2.80370175 9.23805473,1.30496106 C10.5089641,0.427295403 11.9249614,-0.000801555154 13.4806908,1.12664188e-06 C15.231427,0.000937588737 16.9821632,0.000201797091 18.7328995,0.000201797091 L19.0962715,0.000201797091 L19.0962715,6.96099144 C18.9463084,6.96921893 18.8012206,6.98386787 18.656064,6.98400165 C17.0083244,6.98567391 15.3605847,6.985005 13.7128451,6.98513878 C12.7118555,6.98520567 12.0729332,7.48949051 12.009762,8.4755851 C11.9436381,9.50676365 11.9949304,10.5451663 11.9949304,11.6250409 L19.1040992,11.6250409 C19.111515,11.7866475 19.1216087,11.9053775 19.1216773,12.0241075 C19.1226386,14.0974346 19.1148795,16.1708286 19.1303977,18.2440219 C19.1327323,18.5644257 19.0251352,18.6297774 18.7216385,18.6281051 C16.616182,18.6167338 14.5107254,18.6220181 12.4052689,18.6219512 L11.9641688,18.6219512 L11.9641688,19.0565365 C11.9641688,24.0615251 11.9641688,34.5543478 11.9641688,34.5543478 L5.26643709,34.4347826 Z" id="Fill-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
