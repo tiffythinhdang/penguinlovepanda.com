@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+	top: -50px;
+	height: 600px;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-rows: repeat(4, 25%);
+	grid-template-columns:  20% 15% 45% 20%;
+	position: relative;
+	align-items: center;
+	justify-items: center;
+}
+
+.button, .main-content {
+	height: 100%;
+	width: 100%;
+}
+
+.button {
+	display: grid;
+	grid-template: 100% / 100%;
+	align-items: center;
+	justify-items: center;
+}
+
+.button img {
+	grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.about {
+	grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.read {
+	grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.contact {
+	grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.shop {
+	grid-area: 4 / 2 / span 1 / span 1;
+	
+}
+
+/*----MOBILE VIEW----*/
+
+@media (max-width: 420px) {
+	
+.container {
+	top: 120px;
+	bottom: 75px;
+	left: -5px;
+	height: 80%;
+	grid-template-rows: repeat(2, 15%) 4% repeat(3, 22%);
+	grid-template-columns:  5% repeat(4, 22.5%) 5%;
+	position: absolute;
+}
+
+.button, .main-content {
+	width: 100%;
+}
+	
+.about {
+	grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.read {
+	grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.contact {
+	grid-area: 1 / 4 / span 1 / span 1;
+}
+
+.shop {
+	grid-area: 2 / 5 / span 1 / span 1;
+	
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

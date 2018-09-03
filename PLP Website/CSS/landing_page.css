@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*----DESKTOP VIEW----*/
+
+main {
+	height: 400px;
+	width: 100%;
+	top: 200px;
+	margin: auto;
+	vertical-align: center;
+	display: flex;
+	position: absolute;
+}
+
+.panda img, .penguin img {
+	max-height: 400px;
+	width: auto;
+	position: relative;
+	z-index: 10;
+	animation-name: updown;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.penguin img {
+	float: right;
+	margin-right: 150px;
+	animation-name: downup;
+}
+
+.panda img {
+	margin-left: 150px;
+	margin-bottom: 100px;
+}
+
+.welcome {
+	margin: auto;
+	max-width: 350px;
+	border: #F8F1B4 3px solid;
+	border-radius: 50px;
+	background-color: #EEAE84;
+	text-align: center;
+	color: #F8F1B4;
+	font-size: 25px;
+	padding: 12.5px 75px;
+	z-index: 10;
+}
+
+.welcome, .welcome:visited {
+	text-decoration: none;
+}
+
+.welcome:hover {
+	background-color: #F8F1B4;
+	color: #9A7155;
+	box-shadow: 0px 4px;
+}
+
+@keyframes updown {
+	0% 		{top: 0px;}
+	50% 	{top: 20px;}
+	100% 	{top: 0px;}
+}
+
+@keyframes downup {
+	0% 		{top: 0px;}
+	50% 	{top: -20px;}
+	100% 	{top: 0px;}
+}
+
+
+/*----MOBILE VIEW----*/
+
+@media (max-width: 420px) {
+
+main {
+	height: 400px;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template: 20% 10% 70% / 50% 50%;
+	align-items: center;
+	justify-items: center;
+	position: absolute;
+}
+
+.panda {
+	grid-area: 3 / 1 / span 1 / span 1;	
+}
+
+.penguin {
+	grid-area: 3 / 2 / span 1 / span 1;	
+}
+	
+
+.panda img, .penguin img {
+	max-height: 250px;
+	width: auto;
+	animation-duration: 4s;
+}
+
+.penguin img {
+	float: right;
+	margin-right: 10%;
+	margin-top: 25px;
+}
+
+.panda img {
+	margin-left: 10%;
+}
+
+.welcome {
+	box-sizing: border-box;
+	grid-area: 1 / 1 / span 1 / span 2;
+	width: 80%;
+	font-size: 18px;
+	padding: 12px 35px;
+	align-self: start;
+	z-index: 10;
+}
+	
+}
+	
+

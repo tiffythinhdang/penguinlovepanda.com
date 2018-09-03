@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url("../RESOURCES/BACKGROUND/Background 1.jpg");
+	background-size: 75%;
+	font-family: Comfortaa, Helvetica, Arial, "sans-serif";
+}
+
+.bold {
+	font-weight: bolder;
+}
+
+.italics {
+	font-style: italic;
+}
+
+/*----DESKTOP VIEW----*/
+
+/* Static Star*/
+.star {
+	background: #F8F1B4;
+  	border-radius: 50%;
+  	position: relative;
+  	margin: 50px;
+  	display: inline-block;
+}
+
+/* Before & After Default for all stars*/
+.left::before , .left::after, .midleft::before , .midleft::after, .center::before, .center::after, .right::before, .right::after, .midright::before , .midright::after {
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+    background: #F8F1B4;
+    opacity: 0;
+}
+
+
+/* Left, right, and center stars*/
+.left {
+	float: left;
+	top: 50px;
+	left: 50px;
+}
+
+.center {
+	top: 200px;
+	left: 300px;
+}
+
+.right {
+	float: right;
+	top: 10px;
+	right: 100px;
+}
+
+.left, .center, .right {
+	width: 50px;
+	height: 50px;
+}
+
+.left::before, .center::before, .right::before {
+    width: 100px;
+	height: 100px;
+	top: -25px;
+	left: -25px;
+    animation: pulse 2.5s linear infinite;
+}
+    
+.left::after, .center::after, .right::after {
+	animation: pulse 3.5s linear infinite;
+}
+
+.center::before, .center::after {
+	animation-delay: 2s;
+}
+
+.right::before, .right::after {
+	animation-delay: 4s;
+}
+
+
+
+/*Midleft star*/
+.midleft {
+	width: 75px;
+	height: 75px;
+	top: 500px;
+	left: 150px;
+}
+
+.midleft::before , .midleft::after {
+    width: 125px;
+	height: 125px;
+	top: -25px;
+	left: -25px;
+    animation: pulse 3s linear infinite;
+	animation-delay: 7s;
+}
+    
+.midleft::after {
+	animation: pulse 4s linear infinite;
+}
+
+
+/*Midright star*/
+.midright {
+	width: 30px;
+	height: 30px;
+	float: right;
+	top: 300px;
+	right: 400px;
+}
+
+.midright::before , .midright::after {
+    width: 60px;
+	height: 60px;
+	top: -15px;
+	left: -15px;
+    animation: pulse 1.5s linear infinite;
+	animation-delay: 9s;
+}
+    
+.midright::after {
+	animation: pulse 2.5s linear infinite;
+	animation-delay: 9s;
+}
+
+
+/*Animation Frames for all stars*/
+    
+@keyframes pulse {
+	0% {
+    transform: scale(0);
+    opacity: 1;
+	}
+	
+	100% {
+    transform: scale(1.3);
+    opacity: 0;
+	}
+}
+    
+/*----MOBILE VIEW----*/
+
+@media (max-width: 420px) {
+	
+body {
+	background-size: 120%;
+}
+
+/* Static Star*/
+.star {
+  	margin: 25px;
+}
+
+/* Left, right, and center stars*/
+.left {
+	float: left;
+	top: 35px;
+	left: 0px;
+}
+
+.center {
+	top: 300px;
+	left: 10px;
+}
+
+.right {
+	float: right;
+	top: 50px;
+	right: -10px;
+}
+
+.left, .center, .right {
+	width: 35px;
+	height: 35px;
+}
+
+.left::before, .center::before, .right::before {
+    width: 70px;
+	height: 70px;
+	top: -17.5px;
+	left: -17.5px;
+    animation: pulse 2s linear infinite;
+}
+    
+.left::after, .center::after, .right::after {
+	animation: pulse 3s linear infinite;
+}
+
+.center::before, .center::after {
+	animation-delay: 1s;
+}
+
+.right::before, .right::after {
+	animation-delay: 3s;
+}
+
+
+
+/*Midleft star*/
+.midleft {
+	width: 30px;
+	height: 30px;
+	top: 550px;
+	left: -20px;
+}
+
+.midleft::before , .midleft::after {
+    width: 60px;
+	height: 60px;
+	top: -15px;
+	left: -15px;
+    animation: pulse 2s linear infinite;
+	animation-delay: 6s;
+}
+    
+.midleft::after {
+	animation: pulse 3s linear infinite;
+}
+
+
+/*Midright star*/
+.midright {
+	width: 20px;
+	height: 20px;
+	float: right;
+	top: 470px;
+	right: -10px;
+}
+
+.midright::before , .midright::after {
+    width: 40px;
+	height: 40px;
+	top: -10px;
+	left: -10px;
+    animation: pulse 1.5s linear infinite;
+	animation-delay: 9s;
+}
+    
+.midright::after {
+	animation: pulse 2.5s linear infinite;
+	animation-delay: 9s;
+}
+
+}
+
+
+
+
+

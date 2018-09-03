@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+	height: 600px;
+	width: 100%;
+	top: 100px;
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+	display: grid;
+	grid-template: 15% repeat(4, 17.5%) 15% / repeat(5, 9.09%) 50px repeat(5, 9.09%);
+	position: absolute;
+}
+
+.circle {
+	grid-area: 2 / 4 / span 4 / span 5;
+	background-color: #F8F1B4;
+	border-radius: 50%;
+	opacity: 0.5;
+	max-height: 110%;
+	animation: pulse2 4s linear infinite;
+}
+
+.first {
+	width: 300px;
+	height: 300px;
+/*	animation: pulselight2 5s linear infinite;*/
+}
+.second {
+	width: 375px;
+	height: 375px;
+/*	animation: pulse2 4s linear infinite;*/
+}
+
+.third {
+	width: 450px;
+	height: 450px;
+/*	animation: pulse2 4s linear infinite;*/
+}
+
+
+.panda {
+	grid-area: 2 / 4 / span 3 / span 2;
+	height: 100%;
+	justify-self: end;
+	align-self: end;
+	z-index: 10;
+}
+
+.panda img {
+	height: 90%;
+}
+
+.penguin {
+	grid-area: 3 / 7 / span 3 / span 2;
+	height: 100%;
+	justify-self: start;
+	align-self: end;
+	z-index: 10;
+}
+
+.penguin img {
+	height: 80%;
+}
+
+.about {
+	grid-area: 3 / 3 / span 1 / span 2;
+	justify-self: end;
+	align-self: start;
+	height: 75%;
+	z-index: 10;
+}
+
+.read {
+	grid-area: 1 / 6 / span 2 / span 2;
+	height: 75%;
+	justifify-self: start;
+	z-index: 10;
+}
+
+.contact {
+	grid-area: 4/ 7 / span 2 / span 2;
+	height: 75%;
+	justifify-self: end;
+	align-self: start;
+	z-index: 10
+}
+
+.shop {
+	grid-area: 5 / 5 / span 2 / span 2;
+	height: 75%;
+	align-self: end;
+	z-index: 10;
+}
+
+.panda img , .penguin img {
+	position: relative;
+	animation-name: updown;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	left: 25px;
+}
+
+
+.penguin img {
+	animation-name: downup;
+	left: 0px;
+}
+
+.contact img {
+	left: 50px;
+}
+
+.about img:hover, .read img:hover, .contact img:hover, .shop img:hover {
+	animation: pulsehover 4s linear infinite;
+	position: relative; 
+}
+
+.about img, .contact img {
+	animation: updownlight 2.2s linear infinite;
+	position: relative;
+}
+
+.read img, .shop img {
+	animation: downuplight 2.2s linear infinite;
+	position: relative;
+}
+
+@keyframes updown {
+	0% 		{top: 0px;}
+	50% 	{top: 20px;}
+	100% 	{top: 0px;}
+}
+
+@keyframes downup {
+	0% 		{top: 0px;}
+	50% 	{top: -20px;}
+	100% 	{top: 0px;}
+}
+
+@keyframes updownlight {
+	0% 		{top: 0px;}
+	50% 	{top: 10px;}
+	100% 	{top: 0px;}
+}
+
+@keyframes downuplight {
+	0% 		{top: 0px;}
+	50% 	{top: -10px;}
+	100% 	{top: 0px;}
+}
+
+
+@keyframes pulse2 {
+	0% {
+    transform: scale(1);
+    opacity: 0;
+	}
+	
+	50%{
+	transform: scale(1.1);
+    opacity: 0.5;
+	}
+	
+	100% {
+    transform: scale(1.2);
+    opacity: 0;
+	}
+
+}
+
+@keyframes pulsehover {
+	0% {
+    transform: scale(1);
+	}
+	
+	50% {
+    transform: scale(1.2);
+	}
+	
+	100% {
+    transform: scale(1);
+	}
+}
+
+
+/*----MOBILE VIEW----*/
+
+@media (max-width: 420px) {
+
+.container {
+	box-sizing: border-box;
+	height: 75%;
+	width: 100%;
+	left: -2.5px;
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+	display: grid;
+	grid-template: repeat(6, 16.67%) / repeat(5, 9.5%) 5% repeat(5, 9.5%);
+	position: absolute;
+}
+
+.circle {
+	grid-area: 1 / 1 / span 6 / span 11;
+	background-color: #F8F1B4;
+	border-radius: 50%;
+	opacity: 0.5;
+	max-height: 100%;
+	animation: pulse2 4s linear infinite;
+}
+
+.panda {
+	grid-area: 2 / 3 / span 3 / span 4;
+	width: 90%;
+	display: grid;
+	grid-template: 100% / 100%;
+	z-index: 10;
+}
+
+.panda img, .penguin img {
+	max-width: 100%;
+	align-self: end;
+	justify-self: end;
+	left: 0px;
+}
+
+.penguin img {
+	max-width: 90%;
+	justify-self: start;
+}
+
+.penguin {
+	grid-area: 3 / 7 / span 3 / span 3;
+	width: 100%;
+	display: grid;
+	grid-template: 100% / 100%;
+	z-index: 10;
+}
+
+
+.about {
+	grid-area: 3 / 1 / span 2 / span 3;
+	justify-self: start;
+	align-self: start;
+}
+
+.read {
+	grid-area: 1 / 7 / span 2 / span 3;
+	justify-self: start;
+	align-self: end;
+}
+
+.contact {
+	grid-area: 4 / 9 / span 2 / span 3;
+	justify-self: end;
+	align-self: start;
+}
+
+.shop {
+	grid-area: 5 / 3 / span 2 / span 3;
+	align-self: start;
+}
+
+.shop, .read, .shop, .about {
+	height: 100%;
+	display: grid;
+	grid-template: 100% / 100%;
+	align-items: center;
+	justify-items: center;
+}
+
+.button img {
+	max-width: 100%;
+}
+
+.about img {
+	grid-area: 1 / 1 / span 1 / span 1;
+	align-self: start;
+}
+
+.read img {
+	grid-area: 1 / 1 / span 1 / span 1;
+	align-self: end;
+}
+
+.contact img {
+	grid-area: 1 / 1 / span 1 / span 1;
+	align-self: start;
+	left: 0px;
+}
+	
+.shop img {
+	grid-area: 1 / 1 / span 1 / span 1;
+}
+}
+
+
+
