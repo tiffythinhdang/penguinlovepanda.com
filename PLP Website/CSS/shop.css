@@ -45,13 +45,13 @@
 }
 
 .shop img {
-	height: 120%;
+	height: 100%;
 	animation: pulselight 3s linear infinite;
 	z-index: 20;
 }
 
 .read img, .contact img, .about img {
-	height: 90%;
+	height: 75%;
 	z-index: 20;
 }
 

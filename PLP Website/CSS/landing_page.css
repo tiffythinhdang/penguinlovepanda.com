@@ -79,6 +79,7 @@ main {
 main {
 	height: 400px;
 	width: 100%;
+	top: 100px;
 	margin: auto;
 	display: grid;
 	grid-template: 20% 10% 70% / 50% 50%;

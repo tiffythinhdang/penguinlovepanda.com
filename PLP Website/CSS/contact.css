@@ -14,12 +14,12 @@
 }
 
 .contact img {
-	height: 120%;
+	height: 100%;
 	animation: pulselight 3s linear infinite;
 }
 
 .read img, .shop img, .about img {
-	height: 90%;
+	height: 75%;
 }
 
 
@@ -47,7 +47,7 @@
 @media (max-width: 420px) {
 
 .main-content {
-	grid-area: 4 / 2 / span 1 / span 4;
+	grid-area: 4 / 2 / span 2 / span 4;
 	border-radius: 20px;
 	padding: 20px;
 	height: 90%;

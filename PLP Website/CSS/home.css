@@ -118,14 +118,14 @@
 	position: relative; 
 }
 
-.about img, .contact img {
+.about img, .contact img, .read img, .shop img {
+	height: 129px;
 	animation: updownlight 2.2s linear infinite;
 	position: relative;
 }
 
 .read img, .shop img {
-	animation: downuplight 2.2s linear infinite;
-	position: relative;
+	animation-name: downuplight;
 }
 
 @keyframes updown {
@@ -194,7 +194,7 @@
 	box-sizing: border-box;
 	height: 75%;
 	width: 100%;
-	left: -2.5px;
+	left: 0px;
 	text-align: center;
 	justify-items: center;
 	align-items: center;
@@ -273,7 +273,8 @@
 }
 
 .button img {
-	max-width: 100%;
+	max-width: 90%;
+	height: auto;
 }
 
 .about img {

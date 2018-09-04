@@ -17,12 +17,12 @@
 }
 
 .about img {
-	height: 120%;
+	height: 100%;
 	animation: pulselight 3s linear infinite;
 }
 
 .read img, .shop img, .contact img {
-	height: 90%;
+	height: 75%;
 }
 
 

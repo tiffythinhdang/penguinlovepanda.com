@@ -53,11 +53,11 @@
 	
 .container {
 	top: 120px;
-	bottom: 75px;
-	left: -5px;
-	height: 80%;
+	bottom: 0px;
+	left: 0px;
+	height: 5000px;
 	grid-template-rows: repeat(2, 15%) 4% repeat(3, 22%);
-	grid-template-columns:  5% repeat(4, 22.5%) 5%;
+	grid-template-columns: 5% repeat(4, 22.5%) 5%;
 	position: absolute;
 }
 
@@ -79,9 +79,7 @@
 
 .shop {
 	grid-area: 2 / 5 / span 1 / span 1;
-	
 }
-	
 }
 
 
