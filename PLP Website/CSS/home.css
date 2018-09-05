@@ -9,7 +9,7 @@
 	justify-items: center;
 	align-items: center;
 	display: grid;
-	grid-template: 15% repeat(4, 17.5%) 15% / repeat(5, 9.09%) 50px repeat(5, 9.09%);
+	grid-template: 15% repeat(4, 17.5%) 15% / repeat(5, 9.5%) 5% repeat(5, 9.5%);
 	position: absolute;
 }
 
