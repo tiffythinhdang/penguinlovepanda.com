@@ -63,6 +63,12 @@
 	max-height: 500px;
 }
 
+.embedinstagram {
+	max-width: 540px; 
+	min-width: 320px;
+	margin: auto;
+}
+
 @keyframes pulselight {
 	0% {
     transform: scale(1);
